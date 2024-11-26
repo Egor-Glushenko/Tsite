@@ -96,3 +96,30 @@ body {
     text-decoration: none;
     cursor: pointer;
 }
+
+/* Тёмная тема */
+body.dark-theme {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Кнопки в header */
+.header-buttons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.header-buttons button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.header-buttons button:hover {
+    background-color: #0056b3;
+}
