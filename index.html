@@ -33,10 +33,15 @@
     </div>
     <div id="icons" class="icons"></div>
 
-    <div id="menuPopup" class="popup" onclick="hideMenu()">
+    <!-- Выпадающее меню -->
+    <div id="menuPopup" class="popup">
         <div class="popup-content">
-            <span class="close" onclick="hideMenu()">&times;</span>
-            <div id="usercard"></div><p>Добро пожаловать в Tsite! Здесь вы найдете множество полезных ресурсов, таких как - сми, нейросети, игры и многое другое! Tsite находиться в стадии активной разработки, вскоре будет добавлено множество ресурсов.</p>
+            <span class="close" onclick="toggleMenu()">&times;</span>
+            <div id="usercard"></div>
+            <p>Добро пожаловать в Tsite! Здесь вы найдете множество полезных ресурсов, таких как СМИ, нейросети, игры и многое другое! Tsite находится в стадии активной разработки.</p>
+            
+            <button class="menu-button" onclick="toggleTheme()">Сменить тему</button>
+            <button class="menu-button" onclick="shareApp()">Поделиться</button>
         </div>
     </div>
 
