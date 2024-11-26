@@ -52,3 +52,23 @@ function showMenu() {
 function hideMenu() {
     document.getElementById('menuPopup').style.display = 'none';
 }
+
+// Функция для смены темы
+function toggleTheme() {
+    document.body.classList.toggle('dark-theme');
+    const themeToggleButton = document.getElementById('themeToggle');
+    if (document.body.classList.contains('dark-theme')) {
+        themeToggleButton.textContent = 'Светлая тема';
+    } else {
+        themeToggleButton.textContent = 'Темная тема';
+    }
+}
+
+function shareApp() {
+    let referralLink = `https://t.me/Tsites_bot?start`;
+    var shareText = `${username} приглашает вас исследовать интернет внутри телеграм! Не упустите такую возможность!`;
+    var encodedUrl = encodeURIComponent(referralLink);
+    var encodedText = encodeURIComponent(shareText);
+    var telegramUrl = "https://t.me/share/url?url=" + encodedUrl + "&text=" + encodedText;
+    window.open(telegramUrl, "_blank");
+}
