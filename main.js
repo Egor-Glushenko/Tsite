@@ -65,7 +65,7 @@ function toggleTheme() {
 }
 
 function shareApp() {
-    let referralLink = `https://t.me/Tsites_bot?start`;
+    let referralLink = `https://t.me/Tsites_bot?startapp`;
     var shareText = `${username} приглашает вас исследовать интернет внутри телеграм! Не упустите такую возможность!`;
     var encodedUrl = encodeURIComponent(referralLink);
     var encodedText = encodeURIComponent(shareText);
