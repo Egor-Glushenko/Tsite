@@ -159,7 +159,7 @@ body {
 
 /* Темная тема */
 body.dark-theme {
-    background-color: #121212;
+    background-color: #1e1e1e;
     color: #ffffff;
 }
 
